@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F89B9B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ravi Worldwide Medicines"
+       android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="20dp"
+        android:id="@+id/image1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/etid1"
+        android:layout_below="@id/image1"
+        android:layout_marginTop="20dp"
+        android:hint="enter url here"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+
+        android:padding="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etid1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/btnclear"
+        android:text="clear data"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnconvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etid1"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Convert url"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="click to next "
+        android:id="@+id/clicktonext"
+        android:layout_below="@+id/btnconvert"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_margin="05dp"
+        android:fontFamily="sans-serif-black"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/download"
+        android:layout_below="@id/image1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:id="@+id/btndownload"/>
+
+</RelativeLayout>
